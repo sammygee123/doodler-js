@@ -173,5 +173,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     start()
 
-
 }) 
