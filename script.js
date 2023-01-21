@@ -117,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(rightTimerId)
     }
     function control(e) {
+          doodler.style.bottom = doodlerBottomSpace + 'px'
         if (e.key === "ArrowLeft") {
             moveLeft()
 
@@ -167,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
             createPlatforms()
             createDoodler()
             setInterval(movePlatforms, 30)
-            jump()
+            jump(startPoint)
             document.addEventListener("keyup", control)
         }
     }
